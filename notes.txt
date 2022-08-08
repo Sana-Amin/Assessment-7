@@ -1,0 +1,24 @@
+Results for the extraLargeArray
+insert 955.757147 ms
+append 14.472852 ms
+
+Results for the tinyArray
+insert 37.223 μs
+append 97.733 μs
+
+Results for the smallArray
+insert 47.39 μs
+append 108.815 μs
+
+Results for the mediumArray
+insert 337.855 μs
+append 263.904 μs
+
+Results for the largeArray
+insert 12.968873 ms
+append 1.020569 ms
+
+
+The doublerAppend function uses the .push method, and the doublerInsert Function uses .unshift. As the size of the array's 
+increase you'll notice that doublerAppend function scales better. When size isn't a problem the doublerInsert has a faster runtime, but the more items the function has to go through the slower it gets compared to the doublerAppend function. The doublerInsert function a time complexity of O(n), where as doublerAppend has a time complexity of O(n^2).
+Extra Credit: The reason for doublerAppend being the slower function is that it uses the .unshift method, which addes elements to the beginning of an array shifting all the other elements that were already in the array making it slower as the size of the array increases. 
