@@ -20,5 +20,5 @@ append 1.020569 ms
 
 
 The doublerAppend function uses the .push method, and the doublerInsert Function uses .unshift. As the size of the array's 
-increase you'll notice that doublerAppend function scales better. When size isn't a problem the doublerInsert has a faster runtime, but the more items the function has to go through the slower it gets compared to the doublerAppend function. The doublerInsert function a time complexity of O(n), where as doublerAppend has a time complexity of O(n^2).
-Extra Credit: The reason for doublerAppend being the slower function is that it uses the .unshift method, which addes elements to the beginning of an array shifting all the other elements that were already in the array making it slower as the size of the array increases. 
+increase you'll notice that doublerAppend function scales better. When size isn't a problem the doublerInsert has a faster runtime, but the more items the function has to go through the slower it gets compared to the doublerAppend function. The doublerAppend function a time complexity of O(n), where as doublerInsert has a time complexity of O(n^2).
+Extra Credit: The reason for doublerInsert being the slower function is that it uses the .unshift method, which addes elements to the beginning of an array shifting all the other elements that were already in the array making it slower as the size of the array increases. 
